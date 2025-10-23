@@ -1,0 +1,147 @@
+Mg Phoe Chit, [10/23/2025 4:27 PM]
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love TMH - ထာဝရချစ်ခြင်း</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">My Love TMH</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#couple-photos">Couple Photos</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#message">Message</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="fade-in-up-1">ကမ္ဘာပေါ်မှာ အလှဆုံးဖြစ်တဲ့</h1>
+            <h2 class="fade-in-up-2">ငါ့ရဲ့ ကောင်မလေး</h2>
+            <p class="fade-in-up-3">
+                <span id="typing-text"></span>
+                <span class="heart-beat-icon"><i class="fas fa-heart"></i></span>
+            </p>
+            <a href="#couple-photos" class="cta-button pulse-effect">အမှတ်တရများ စတင်ကြည့်ရှုရန်</a>
+        </div>
+    </section>
+
+    <section id="couple-photos" class="content-section">
+        <h2>Couple Photos <span class="heart-icon-title"><i class="fas fa-camera-retro"></i></span></h2>
+        <div class="gallery-grid">
+            <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c1.jpg')">
+                <img src="media/couple/c1.jpg" alt="Couple Photo 1">
+                <div class="overlay">ချစ်ရသောအချိန်</div>
+            </div>
+            <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c2.jpg')">
+                <img src="media/couple/c2.jpg" alt="Couple Photo 2">
+                <div class="overlay">အတူရှိခြင်း</div>
+            </div>
+            <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c3.jpg')">
+                <img src="media/couple/c3.jpg" alt="Couple Photo 3">
+                <div class="overlay">အမှတ်တရပုံရိပ်</div>
+            </div>
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c4.jpg')">
+                <img src="media/couple/c4.jpg" alt="Couple Photo 4">
+                <div class="overlay">ကြည်နူးစရာ</div>
+            </div>
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c5.jpg')">
+                <img src="media/couple/c5.jpg" alt="Couple Photo 5">
+                <div class="overlay">နူးညံ့မှု</div>
+            </div>
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/couple/c6.jpg')">
+                <img src="media/couple/c6.jpg" alt="Couple Photo 6">
+                <div class="overlay">ထာဝရ</div>
+            </div>
+        </div>
+        <h3 class="photo-section-subtitle">အခြား အမှတ်တရ ဓာတ်ပုံများ</h3>
+         <div class="gallery-grid">
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/photos/t1.jpg')">
+                <img src="media/photos/t1.jpg" alt="Personal Photo 1">
+                <div class="overlay">မင်းရဲ့အလှ</div>
+            </div>
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/photos/t2.jpg')">
+                <img src="media/photos/t2.jpg" alt="Personal Photo 2">
+                <div class="overlay">အပြုံးပိုင်ရှင်</div>
+            </div>
+             <div class="photo-box hover-zoom-shadow" onclick="showPopup('media/photos/t3.jpg')">
+                <img src="media/photos/t3.jpg" alt="Personal Photo 3">
+                <div class="overlay">အသည်းကျော်</div>
+            </div>
+         </div>
+    </section>
+
+Mg Phoe Chit, [10/23/2025 4:27 PM]
+<section id="videos" class="content-section media-section">
+        <h2>Sweet Videos <span class="heart-icon-title"><i class="fas fa-video"></i></span></h2>
+        <div class="media-grid">
+            <div class="media-box hover-glow">
+                <video controls poster="media/photos/t1.jpg"> 
+                    <source src="media/videos/v1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video 1 - အချစ်ရဲ့စတင်ခြင်း</p>
+            </div>
+             <div class="media-box hover-glow">
+                <video controls poster="media/photos/t2.jpg">
+                    <source src="media/videos/v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video 2 - အပျော်ဆုံးအချိန်</p>
+            </div>
+             </div>
+    </section>
+
+    <section id="music" class="content-section media-section">
+        <h2>Our Favorite Music <span class="heart-icon-title"><i class="fas fa-music"></i></span></h2>
+        <div class="media-grid music-grid">
+            <div class="music-box hover-shadow-pink">
+                <p>🎶 သီချင်း 1 (En)</p>
+                <audio controls>
+                    <source src="media/music/m1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+             <div class="music-box hover-shadow-pink">
+                <p>🎶 သီချင်း 2 (မောင်အမြဲဆိုပြနေတဲ့သီချင်းလေ🎶)</p>
+                <audio controls>
+                    <source src="media/music/m2.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+             </div>
+    </section>
+
+    <section id="message" class="content-section message-section">
+        <h2>အသည်းကလာသော စာတစ်စောင် <span class="heart-icon-title"><i class="fas fa-envelope-open-text"></i></span></h2>
+        <div class="message-box rotate-on-hover">
+            <p id="special-message" class="handwriting-font"></p>
+            <div class="signature">
+                <p>- သဲလေချစ်သောမောင်😊</p>
+                <span class="heart-pulse-signature">❤️</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Love TMH. All rights reserved. With Endless Love.</p>
+        <a href="#home" class="to-top-button pulse-effect"><i class="fas fa-arrow-up"></i> Home ကို ပြန်သွားမည်</a>
+    </footer>
+
+    <div id="image-popup" class="modal" onclick="closePopup()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="popup-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+Mg Phoe Chit, [10/23/2025 4:28 PM]
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --primary-pink: #FF1493; /* Deep Pink - ပန်းရောင်ရင့် */
+    --light-pink: #FFB6C1; /* Light Pink - နူးညံ့တဲ့ပန်းရောင် */
+    --soft-pink-bg: #FFF0F5; /* Lavender Blush - နောက်ခံနူးညံ့သောပန်းရောင် */
+    --text-color: #333;
+    --shadow-color: rgba(255, 20, 147, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    background-color: var(--soft-pink-bg);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Horizontal scroll မဖြစ်အောင် */
+}
+
+/* --- Global Styles and Typography --- */
+h1, h2, h3 {
+    text-align: center;
+    color: var(--primary-pink);
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    padding-top: 50px;
+}
+
+.heart-icon-title {
+    color: var(--primary-pink);
+    margin-left: 10px;
+    animation: heartBeat 1.5s infinite;
+    display: inline-block;
+}
+
+.content-section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 20, 147, 0.95); /* ပန်းရောင်ရင့်ကို အနည်းငယ်မှိန်ထားသည် */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Charm', cursive;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.nav-links li a:hover {
+    background-color: #fff;
+    color: var(--primary-pink);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* --- Hero Section (Home) --- */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--soft-pink-bg) 0%, var(--light-pink) 100%);
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.hero-content h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: var(--primary-pink);
+    text-shadow: 3px 3px 5px rgba(255, 20, 147, 0.6);
+    opacity: 0;
+}
+.hero-content p {
+    font-size: 1.8em;
+    font-family: 'Charm', cursive;
+    color: var(--primary-pink);
+    margin-bottom: 40px;
+}
+
+/* Typing Effect Cursor */
+#typing-text::after {
+    content: '|';
+    animation: blink-caret 0.75s step-end infinite;
+    color: var(--primary-pink);
+    font-weight: bold;
+}
+
+/* Home Section Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up-1 { animation: fadeInUp 1s ease-out 0.5s forwards; }
+.fade-in-up-2 { animation: fadeInUp 1s ease-out 1.2s forwards; }
+.fade-in-up-3 { animation: fadeInUp 1s ease-out 1.9s forwards; }
+
+/* Heart Beat Effect on Home Text */
+.heart-beat-icon {
+    display: inline-block;
+    color: var(--primary-pink);
+    margin-left: 10px;
+    animation: heartBeat 1s infinite alternate;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-pink); }
+}
+
+Mg Phoe Chit, [10/23/2025 4:28 PM]
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--primary-pink);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: var(--primary-pink);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--primary-pink);
+}
+
+/* Pulse Effect for Buttons */
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0px var(--shadow-color); }
+    50% { box-shadow: 0 0 0 15px rgba(255, 20, 147, 0); }
+    100% { box-shadow: 0 0 0 0px var(--shadow-color); }
+}
+
+/* --- Gallery & Media Grid --- */
+.gallery-grid, .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Photo Box Styling */
+.photo-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+    background-color: white;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 300px; /* ဓာတ်ပုံအရွယ်အစား ညီမျှစေရန် */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* Hover Zoom and Shadow Effect */
+.hover-zoom-shadow:hover img {
+    transform: scale(1.1);
+}
+.hover-zoom-shadow:hover {
+    box-shadow: 0 15px 30px rgba(255, 20, 147, 0.8); /* Pink Shadow Effect */
+}
+
+/* Photo Box Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 20, 147, 0.7); /* ပန်းရောင်ရင့် */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.photo-box:hover .overlay {
+    transform: translateY(0);
+}
+
+/* Media Box (Video) Styling */
+.media-box {
+    border: 3px solid var(--light-pink);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+.media-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.media-box p {
+    padding: 10px;
+    background-color: var(--light-pink);
+    color: var(--primary-pink);
+    font-weight: bold;
+}
+
+/* Video/Media Box Hover Glow Effect */
+.hover-glow:hover {
+    box-shadow: 0 0 20px var(--primary-pink); /* Pink Glow Effect */
+}
+
+/* Music Box Styling */
+.music-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.music-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.music-box p {
+    color: var(--primary-pink);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Music Box Hover Shadow Pink Effect */
+.hover-shadow-pink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 20, 147, 0.6);
+}
+
+/* --- Special Message Section --- */
+.message-section {
+    background-color: var(--light-pink);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.message-box {
+    background-color: white;
+    border: 5px solid var(--primary-pink);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.5);
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.handwriting-font {
+    font-family: 'Charm', cursive;
+    font-size: 1.5em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Rotate Effect for Message Box */
+.rotate-on-hover:hover {
+    transform: rotate(2deg) scale(1.02);
+}
+
+Mg Phoe Chit, [10/23/2025 4:28 PM]
+.signature {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary-pink);
+    font-size: 1.2em;
+}
+.heart-pulse-signature {
+    display: inline-block;
+    color: var(--primary-pink);
+    animation: pulse 1.5s infinite;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-pink);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.to-top-button {
+    position: absolute;
+    top: -25px;
+    right: 5%;
+    background-color: white;
+    color: var(--primary-pink);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.to-top-button:hover {
+    background-color: var(--light-pink);
+    transform: scale(1.1);
+}
+
+/* --- Floating Hearts Animation --- */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: var(--primary-pink);
+    font-size: 20px;
+    transform: translateY(0);
+    animation: floatUp 6s infinite ease-in;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% { opacity: 0; transform: translateY(100vh) scale(0); }
+    10% { opacity: 0.8; transform: translateY(80vh) scale(1); }
+    80% { opacity: 0.8; }
+    100% { opacity: 0; transform: translateY(-10vh) scale(1.5); }
+}
+
+/* --- Image Popup (Modal) Styling --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 2000; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--primary-pink);
+    animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.1); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--primary-pink);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design (Mobile Support) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links li a {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .to-top-button {
+        position: static;
+        margin-top: 15px;
+    }
+}
